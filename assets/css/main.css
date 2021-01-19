@@ -112,6 +112,7 @@ section {
 
 body {
     line-height: 1;
+    height: 100%;
 }
 
 ol,
@@ -312,7 +313,7 @@ table {
 }
 
 header {
-    margin-bottom: 10em;
+    margin-bottom: 1em;
 }
 
 header p {
