@@ -173,6 +173,18 @@ html {
     box-sizing: inherit;
 }
 
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+ }
+
 body {
     background-color: #74db88;
     background-image: url("images/overlay.png"), url("images/underwater\ scene\ 2.png");
