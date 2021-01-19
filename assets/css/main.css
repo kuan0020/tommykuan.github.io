@@ -112,7 +112,6 @@ section {
 
 body {
     line-height: 1;
-    height: 100%;
 }
 
 ol,
@@ -189,6 +188,9 @@ body {
     color: #212221;
     text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
     -webkit-text-stroke: 0.25px;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 body.is-scroll {
