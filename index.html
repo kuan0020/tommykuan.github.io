@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css">
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans Semi Expanded' rel='stylesheet' type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -52,7 +53,7 @@
         <div class="inner">
             <header>
                 <h2>Research Assistant</h2>
-                <h6> University of Minnesota</h6>
+                <a href="https://twin-cities.umn.edu/"> University of Minnesota </a>
             </header>
             <p>Worked with the <a href="https://github.com/sharanbngr/blip">Bayesian LISA Pipeline</a> written by Sharan Banagiri that detects parameters of interest from the stochastic gravitational wave backgrounds. </p>
         </div>
@@ -63,7 +64,7 @@
         <div class="inner">
             <header>
                 <h2>Teaching Assistant</h2>
-                <h6>University of Minnesota</h6>
+                <a href="https://twin-cities.umn.edu/"> University of Minnesota </a>
             </header>
             <p>Helped professors to recognize and solve issues students were facing in class and conducted tutor and discussion sessions to increase students' interest in physics.</p>
         </div>
@@ -157,17 +158,21 @@
             <h2>Contact Me</h2>
             <p>Check out my personal projects in my Github</p>
         </header>
-        <form method="post" action="https://formspree.io/f/xnqowngq">
+        <form method="post" id="message-form" action="https://formsubmit.co/kuan0020@umn.edu">
+            <p id="error" hidden>Please fill out all fields.</p>
+            <input type="hidden" name="_autoresponse" value="this is wehere the cusotm maesase">
             <div class="row gtr-50">
-                <div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-                <div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
+                <div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Full Name" required/></div>
+                <div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email Address" required/></div>
                 <div class="col-12">
                     <textarea name="message" placeholder="Message me for my CV! "></textarea>
                 </div>
                 <div class="col-12">
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" /></li>
+                        <li><input type="reset" value="Reset" /></li>
                     </ul>
+                    <!-- <p id="thanks" hidden>Your message has been received. Thanks!</p> -->
                 </div>
             </div>
         </form>
@@ -181,7 +186,7 @@
         <div class="copyright">
             <ul class="menu">
                 <li>&copy; Tommy Kuan. </li>
-                <li>Design from: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </div>
     </section>

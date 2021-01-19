@@ -227,9 +227,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.75em;
+    font-family: 'Encode Sans Semi Expanded';
+    font-size: 22px;
 }
 
 h1 a,
@@ -267,7 +269,7 @@ a {
     -webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    color: #35b88f;
+    color: #217a5e;
     text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
     text-decoration: none;
     border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
