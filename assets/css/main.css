@@ -177,13 +177,36 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
- }
- 
- body {
+}
+
+body {
     margin: 0px;
     min-height: 100%;
     width: 100%;
- }
+}
+
+a.pplinks {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    /* margin: 0 0 2em 0; */
+    margin: 15%;
+    /* padding-left: 10px; */
+    display: flex;
+    /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-10%);
+    background-color: #FFFFFF;
+}
+
+a.pplinks:hover {
+    border: none;
+    background-color: #217a5e;
+    color: #FFFFFF;
+}
 
 body {
     background-color: #74db88;
@@ -1766,6 +1789,29 @@ button.style3:hover,
     background: url("images/arrow.svg") no-repeat;
 }
 
+.box.contacts:before{
+        content: '';
+    display: block;
+    width: 90px;
+    height: 66px;
+    position: absolute;
+    left: 50%;
+    top: -4.5em;
+    margin-left: -45px;
+    margin-top: -33px;
+    background: url("images/arrow.svg") no-repeat;
+}
+
+.box.contacts:after{
+    content: '';
+    display: block;
+    position: absolute;
+    /* top: -9em; */
+    left: 50%;
+    height: 9em;
+    border-left: none;
+}
+
 .box :last-child {
     margin-bottom: 0;
 }
@@ -1822,6 +1868,7 @@ button.style3:hover,
     padding-right: 3em;
 }
 
+
 .box.style2 {
     text-align: center;
 }
@@ -1842,6 +1889,7 @@ button.style3:hover,
     padding: 40px 0 0px 0;
 }
 
+
 .box.style2 .inner:after {
     content: '';
     display: block;
@@ -1850,6 +1898,16 @@ button.style3:hover,
     left: 50%;
     height: 100%;
     border-left: solid 1px #fff;
+}
+
+.box.style2 .inner.ppdiv:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-left: none;
 }
 
 .box.style2 .inner .row {
@@ -2527,3 +2585,35 @@ body.is-preload #header footer {
         opacity: 0.5;
     }
 }
+
+.nav__links {
+    list-style: none;
+    height: 40px;
+    position: fixed;
+    /* top: 0; */
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    transition: transform .5s;
+    top: -40px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: sticky;
+}
+
+
+/*
+.nav__links a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.nav__links.hidden {
+    transform: translateY(-100%);
+} */
